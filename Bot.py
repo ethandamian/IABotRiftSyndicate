@@ -9,12 +9,13 @@ async def send_message(message,user_message,is_private):
 
 
 def run_discord_bot():
-    TOKEN = '<EL TOKEN VA A AQUI>'
+    TOKEN = ""
     intents = discord.Intents.default()
     intents.message_content = True
 
     bot = commands.Bot(command_prefix='!', intents=intents)
 
+    # este es un comando para el bot, al escribirlo en el chat, se tiene que poner !<nombre del comando>
     @bot.command()
     async def ping(ctx):
         await ctx.send("pong")   
