@@ -5,7 +5,7 @@ def get_response(mesagge: str) -> str:
     user_message = mesagge.lower()
 
     if user_message == 'hola':
-        return 'Hola, xdxd'
+        return 'Hola, ¿en qué puedo ayudarte?'
 
     if user_message == 'adios':
         return 'Hasta luego'
