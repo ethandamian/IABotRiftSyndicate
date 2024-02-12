@@ -9,7 +9,7 @@ async def send_message(message,user_message,is_private):
 
 
 def run_discord_bot():
-    TOKEN = '<EL TOKEN VA A AQUI>'
+    TOKEN = 'AQUI TOKEN'
     intents = discord.Intents.default()
     intents.message_content = True
 
@@ -22,6 +22,11 @@ def run_discord_bot():
     @bot.command()
     async def downloadLol(ctx):
         await ctx.send('¿Quieres descargar LOL? aquí tienes:\nhttps://signup.leagueoflegends.com/es-mx/signup/redownload')
+
+    @bot.command()
+    async def bestPlayer(ctx):
+        await ctx.send('¿Quieres conocer al mejor jugador de LOL? aquí tienes:\nhttps://www.youtube.com/@T1_Faker')
+
 
     @bot.event
     async def on_ready():
