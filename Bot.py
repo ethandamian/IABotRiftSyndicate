@@ -27,6 +27,7 @@ def run_discord_bot():
 
     @bot.command()
     async def downloadLol(ctx):
+
         await ctx.send(
             "¿Quieres descargar LOL? aquí tienes:\nhttps://signup.leagueoflegends.com/es-mx/signup/redownload"
         )
@@ -46,6 +47,23 @@ def run_discord_bot():
     @bot.event
     async def on_ready():
         print(f"{bot.user} bienvenido a la ruta del invocador")
+
+        await ctx.send('¿Quieres descargar LOL? aquí tienes:\nhttps://signup.leagueoflegends.com/es-mx/signup/redownload')
+        
+    @bot.command()
+    async def musicaInsana(ctx):
+        await ctx.send('Aqui te dejo una rola para que te motives:\nhttps://www.youtube.com/watch?v=C3GouGa0noM')
+    
+    @bot.command()
+    async def musicaAntiTilteo(ctx):
+        await ctx.send('Aqui te dejo una rola para que te relajes:\nhttps://www.youtube.com/watch?v=eeNYBMe0dAE')
+        
+
+    @bot.event
+    async def on_ready():
+        print(f'{bot.user} bienvenido a la ruta del invocador')
+        
+
 
     @bot.event
     async def on_message(message):
